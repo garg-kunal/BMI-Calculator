@@ -1,0 +1,91 @@
+<DOCTYPE html>
+<html lan="en" >
+<head>
+	<title>
+		BMI CALCULATOR
+	</title>
+	<script type="text/javascript">
+		alert("WELCOME");
+		function main() {
+			
+		   var a=document.getElementById('weight').value;
+		   var b=document.getElementById('height').value;
+              if(a ==0 || b==0){
+
+		          alert("Please Enter The Values");
+		          
+                }  
+		      else
+		     {
+	      	     var c= a/(b*b);
+		         document.getElementById("answer").innerHTML=c ;
+		        document.getElementById("field").style.background="lightpink";
+		      }
+	}
+	</script>
+	<style type="text/css">
+		#body{
+			background: #e2e2e2;
+		}
+		#field{
+			background-color:lightblue;
+		}
+		#legend{
+			background-color: white;
+
+		}
+		#field{
+			margin-right: 200px;
+			margin-left: 200px;
+			margin-top: 150px;
+		}
+       #weight{
+       	    border-width:3px;
+       	    border-radius: 0 0 4px 4px;
+          	padding-top: 5px;
+       		padding-bottom: 5px;
+       		padding-left: 5px;
+       		padding-right: 5px;		
+       }
+       #height{
+       	    border-width:3px;
+        	padding-top: 5px;
+       		padding-bottom: 5px;
+       		padding-left: 5px;
+       		padding-right: 5px;	
+       }
+       #button{
+       	    background-color: grey;
+       	    color: black;
+       	    border-style:dashed;
+       	    padding-top: 5px;
+       		padding-bottom: 5px;
+       		padding-left: 5px;
+       		padding-right: 5px;	
+       }
+       #form input[type="button"]:hover{
+       	background-color: white;
+       }
+       #form input[type="number"]:hover{
+       	background-color: #c9c9c9;
+
+       }
+
+	</style>
+</head>
+<!-- body-->
+<body id ="body">
+	<fieldset id="field">
+	<legend id="legend"><font size="20">BMI</font></legend>
+	<center>
+     <form id="form">
+    	<p>Weight&nbsp&nbsp<input required placeholder="Enter your Weight(in kg)" id="weight" type="number"></p><br>
+    	<p>Height &nbsp&nbsp<input required placeholder="Enter your Height(in m)" id="height" type="number"></p><br>
+        <input type="button" id="button"  onclick="main();" value="Submit">
+        <br>
+     </form>	
+     Your BMI is <b>:</b>&nbsp<b id="answer">Answer</b>
+    </center>
+    </fieldset>
+</body>
+</html>	

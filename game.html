@@ -1,0 +1,106 @@
+<DOCTYPE html>
+<html lan="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		CALCULATOR
+	</title>
+	<script type="text/javascript">
+	
+		function res(){
+			location.reload();
+		}
+	</script>
+	<style type="text/css">
+		#reset{
+			background-color: lightgreen;
+			color: white;
+
+		}
+		#p{
+			color: white;
+			font-size: 20px;
+			margin-left: 30px;
+
+		}
+		#calc{
+			margin-top: 100px;
+			margin-left: 550px;
+			width:190px;
+			height:420px;
+			background-color: black;
+			border-color:yellow;
+			border-style: solid;
+			border-width: 5px;
+		}
+		
+		#reset{
+			margin-left: 60px;
+			font-size: 15px;
+			background-color: lightgreen;
+			color:white;
+		}
+		#equal{
+			font-size: 15px;
+			background-color: skyblue;
+			color:white;
+		}
+		#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9,#btn0,#sum,#sub,#mul,#div,#dot{
+			font-size: 30px;
+			margin-left: 11px;
+			color: black;
+			padding: 3px 3px;
+			border-spacing: 0px;
+		}
+		
+		#results{
+         margin-left: 15px;
+         margin-top: 15px;
+          height:40px;
+		}
+		#desg{
+			color: white;
+			float: right;
+		}
+		
+		
+	</style>
+</head>
+	<body bgcolor=" #00b3b3">
+		
+	
+		
+<form Name="calc" id="calc">
+		<p id="p"><b>CALCULATOR</b></p>
+	<input  id="results" Name="Input" size="17"  placeholder="  ANSWER" type="text">
+	<br><br>
+    <input type="button"  id="btn1" value="1" onclick="calc.Input.value +='1'">&nbsp
+	<input type="button"  id="btn2" value="2" onclick="calc.Input.value +='2'">&nbsp
+	<input type="button" id="btn3" value="3" onclick="calc.Input.value +='3'">&nbsp
+	 <input type="button"  id="sum" value="+" onclick="calc.Input.value +='+'">&nbsp
+	<br><br>
+	
+	<input type="button"  id="btn4"  value="4" onclick="calc.Input.value +='4'">&nbsp
+	<input type="button" id="btn5" value="5" onclick="calc.Input.value +='5'">&nbsp
+	<input type="button"  id="btn6" value="6" onclick="calc.Input.value +='6'">&nbsp
+	<input type="button"  id="sub" value="-" onclick="calc.Input.value +='-'">&nbsp
+	<br><br>
+	<input type="button" id="btn7" value="7" onclick="calc.Input.value +='7'">&nbsp
+	<input type="button" id="btn8" value="8" onclick="calc.Input.value +='8'">&nbsp
+	<input type="button" id="btn9" value="9" onclick="calc.Input.value +='9'">&nbsp
+	<input type="button" id="mul" value="x" onclick="calc.Input.value+='*'">&nbsp
+	<br><br>
+	<input type="button" id="dot" value="." onclick="calc.Input.value +='.'">&nbsp&nbsp&nbsp
+	<input type="button" id="btn0" value="0" onclick="calc.Input.value +='0'">&nbsp&nbsp&nbsp&nbsp
+	<input type="button" id="equal" value="="onclick="calc.Input.value =eval(calc.Input.value);">&nbsp&nbsp
+   <input type="button"  id="div" value="/" onclick="calc.Input.value+='/'"><br>
+   <br>
+    <input type="button" value="RESET" id="reset" onclick="res();" ><br><br>
+
+</form>
+<p id="desg"><b>Website maintained Designed by:<br>
+    	Kunal Garg<br>
+    	gargkunal01@gmail.com</b>
+    </p>
+	</body>
+</html>

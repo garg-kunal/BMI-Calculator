@@ -1,4 +1,31 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+.form{
+	background-color:rgb(149, 185, 51);
+	
+}
+fieldset{
+	margin-top: 200px;
+	background-color:rgb(149, 185, 51);
+	color:black;
+
+}
+body{
+	background-color:rgba(240, 236, 35, 0.548);
+}
+#int{
+	box-shadow: 3px 3px 3px grey;
+	border:2px solid white;
+	z-index: -5;
+
+}
+#int:hover{
+	border-radius: 8px;
+}
+#btn{
+	background-color:white;
+	color:black;
+}
+#btn:hover{
+	background-color: lightgrey;
+	border-radius: 7px;
+	color:black;
 }
